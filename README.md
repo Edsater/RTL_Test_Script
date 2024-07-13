@@ -40,16 +40,33 @@ $dumpvars (3, top.u2, top.u1); // Dump top.u1和top.u2及其下两层中的所�
 
 ```
 |-- Project
-    |-- Test1_tb.v
-    |-- Test2_tb.v
-    |-- Test3_tb.v
     |-- module
-            |-- module1.v
+        |-- module1.v
+        |-- module_dir1
             |-- module2.v
-            |-- module3.v
+        |-- module_dir2
+            |-- module_dir3
+                |-- module3.v
     |-- include
-            |-- include1.v
-            |-- include2.vh
+        |-- include1.v
+        |-- include2.vh
+        |-- include_dir1
+            |-- include3.v
+        |-- include_dir2
+            |-- include_dir3
+                |-- include4.v
+    |-- testbench
+        |-- test1_tb.v
+        |-- test_dir1
+            |-- test2_tb.v
+        |-- test_dir2
+            |-- test_dir3
+                |-- test3_tb.v
+    |-- module4.v (not recommend but support)
+    |-- test4_tb.v (not recommend but support)
+    |-- other_dir
+        |-- module5.v (not recommend but support)
+        |-- test5_tb.v (not recommend but support)
     |-- Makefile
 ```
 
