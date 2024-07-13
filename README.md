@@ -28,10 +28,10 @@ end
 dumpvars使用举例：
 ```verilog
 $dumpvars; // Dump所有层次的信号
-$dumpvars (0, top); // Dump top及其以下所有信号
-$dumpvars (1, top); // Dump top模块中的所有信号
-$dumpvars (2, top.u1); // Dump实例top.u1及其下一层的信号
-$dumpvars (3, top.u2, top.u1); // Dump top.u1和top.u2及其下两层中的所有信号
+$dumpvars(0, top); // Dump top及其以下所有信号
+$dumpvars(1, top); // Dump top模块中的所有信号
+$dumpvars(2, top.u1); // Dump实例top.u1及其下一层的信号
+$dumpvars(3, top.u2, top.u1); // Dump top.u1和top.u2及其下两层中的所有信号
 ```
 
 2. 调整项目框架
