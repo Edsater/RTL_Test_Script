@@ -23,7 +23,7 @@ initial begin
 end
 ```
 * 这里的name指代具体testbench的名字，例如adder_tb.v对应adder.lxt，需要**自行替换**。
-* 实际这里生成的vcd文件，但由于后续我们要通过vvp转化为lxt文件，因此文件后缀提前改为lxt
+* 实际这里生成的vcd文件，但由于后续我们要通过vvp转化为lxt文件，因此文件后缀提前改为lxt。
 
 dumpvars使用举例：
 ```verilog
@@ -36,7 +36,7 @@ $dumpvars (3, top.u2, top.u1); // Dump top.u1和top.u2及其下两层中的所�
 
 2. 调整项目框架
 
-按下面的框架调整项目文件，并将本仓库内的Makefile文件加入项目目录内
+按下面的框架调整项目文件，并将本仓库内的Makefile文件加入项目目录内:
 
 ```
 |-- Project
